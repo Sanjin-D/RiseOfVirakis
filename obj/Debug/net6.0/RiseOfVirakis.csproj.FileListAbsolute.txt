@@ -1,0 +1,15 @@
+C:\Users\sanji\source\repos\RiseOfVirakis\bin\Debug\net6.0\RiseOfVirakis.exe
+C:\Users\sanji\source\repos\RiseOfVirakis\bin\Debug\net6.0\RiseOfVirakis.deps.json
+C:\Users\sanji\source\repos\RiseOfVirakis\bin\Debug\net6.0\RiseOfVirakis.runtimeconfig.json
+C:\Users\sanji\source\repos\RiseOfVirakis\bin\Debug\net6.0\RiseOfVirakis.dll
+C:\Users\sanji\source\repos\RiseOfVirakis\bin\Debug\net6.0\RiseOfVirakis.pdb
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.csproj.AssemblyReference.cache
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.AssemblyInfoInputs.cache
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.AssemblyInfo.cs
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.csproj.CoreCompileInputs.cache
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.dll
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\refint\RiseOfVirakis.dll
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.pdb
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\RiseOfVirakis.genruntimeconfig.cache
+C:\Users\sanji\source\repos\RiseOfVirakis\obj\Debug\net6.0\ref\RiseOfVirakis.dll
