@@ -21,6 +21,7 @@ p_Virakis.playerMoveForward();
 p_Virakis.playerMoveForward();
 p_Virakis.get_Player_Position();
 item.writeXML();
+p_Virakis.get_Player_Position();
 
 
 
