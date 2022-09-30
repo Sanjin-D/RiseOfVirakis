@@ -10,23 +10,20 @@ namespace RiseOfVirakis
 {
     internal class Player : Position
     {
+        //TODO -> finish all player attributes and start making methods for everything
+        public float playerHealth { get; private set; }
+        public int playerStrength { get; private set; }
+        public int playerLevel { get; private set; }
+        public float playerExperience { get; private set; }
+        public int playerSpeed { get; private set; }
 
-        private float playerHealth { get; set; }
-        private int playerStrength { get; set; }
-        private int playerLevel { get; set; }
-        private float playerExperience { get; set; }
-        private int playerSpeed { get; set; }
+        public float bagSize { get; private set; }
 
-        public World worldSize = new World();
-
-        public float bagSize { get; set; }
-
-        private Items _item = new Items();
-
-
-
+        private Items.Food item_food = new Items.Food();
+        private Items item = new Items();
         private string playerName = "";
 
+        /*
         public Player(int pX, int pY, string pName, float pHealth, int pStrength, int pLevel, float pExperience, int pSpeed)
         {
             currentPositionX = pX;
@@ -39,11 +36,16 @@ namespace RiseOfVirakis
             playerSpeed = pSpeed;
 
         }
+        */
 
+        public void increaseHealth()
+        {
+            playerHealth += item_food.foodBonus;
+        }
         public void listItems()
         {
             //gehört gemacht nach item implementierung
-            Console.WriteLine(_item);
+            Console.WriteLine(item);
         }
         public void get_Player_Name()
         {
@@ -68,9 +70,9 @@ namespace RiseOfVirakis
 
         public void playerMoveForward()
         {
-            if(worldSize.X <= currentPositionX)
+            if(World.Y <= currentPositionY)
             {
-                currentPositionX += playerSpeed;
+                currentPositionY += playerSpeed;
             }
             else
             {
@@ -80,7 +82,31 @@ namespace RiseOfVirakis
         }
         public void playerMoveBackward()
         {
-            if (worldSize.X >= currentPositionX)
+            if (currentPositionY >= 1)
+            {
+                currentPositionY -= playerSpeed;
+            }
+            else
+            {
+                Console.WriteLine("You reached the end of the world! ");
+            }
+        }
+
+        public void playerMoveRight()
+        {
+            if (World.X >= currentPositionX)
+            {
+                currentPositionX += playerSpeed;
+            }
+            else
+            {
+                Console.WriteLine("You reached the end of the world! ");
+            }
+        }
+
+        public void playerMoveLeft()
+        {
+            if (currentPositionX >= 1)
             {
                 currentPositionX -= playerSpeed;
             }
@@ -88,6 +114,7 @@ namespace RiseOfVirakis
             {
                 Console.WriteLine("You reached the end of the world! ");
             }
+
         }
 
 

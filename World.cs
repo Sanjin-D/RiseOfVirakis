@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RiseOfVirakis
 {
-    internal class World
+    public class World
     {
-        public int X;
-        public int Y;
-
+        public static int X = 500;
+        public static int Y = 500;
+        public string currentArea = "";
 
         public int setWorldSize(int x, int y)
         {
@@ -25,12 +25,15 @@ namespace RiseOfVirakis
 
         public int getArea(int currPosX, int currPosY)
         {
-            string currentArea = "";
+            
             if(currPosX < 20 && currPosY < 20 )
             {
                 currentArea = "Starting Camp";
             }
-            Console.WriteLine(currentArea);
+            else if((currPosX > 20 && currPosX < 50) && (currPosY > 20 && currPosY < 50 ))
+            {
+                currentArea = "Eltherea";
+            }
             return 0;
         }
         

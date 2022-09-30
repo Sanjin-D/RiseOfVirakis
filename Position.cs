@@ -11,5 +11,6 @@ namespace RiseOfVirakis
         public int currentPositionX;
         public int currentPositionY;
 
+
     }
 }

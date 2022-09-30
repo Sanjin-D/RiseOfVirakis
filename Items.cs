@@ -11,12 +11,34 @@ using System.Xml;
 
 namespace RiseOfVirakis
 {
-    
-    public class Items
+    //TODO -> Fix inheritance for the classes 
+    // FInish making items
+    //implement XML System for items
+
+    internal class Items
     {
-        internal int item_id { get; set; }
-        internal float itemWeight { get; set; }
-        internal string? itemClass { get; set; }
+        public Food C_food { get; private set; }
+        public int item_id { get; private set; }
+        public float itemWeight { get; private set; }
+        public string? itemClass { get; private set; }
+
+        internal Items()
+        {
+            this.C_food = new Food();
+        }
+
+        internal class Food
+        {
+            public int foodValue { get; private set; }
+            public int foodBonus { get; private set; }
+
+        }
+
+        internal class Weapons
+        {
+            public int weaponValue { get; private set; }
+            public int weaponBonus { get; private set; }
+        }
 
         public void writeXML()
         {
